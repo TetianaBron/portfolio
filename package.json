@@ -6,8 +6,16 @@
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TetianaBron/portfolio.git"
+  },
   "author": "Tetiana Bronitska <tetiana.bron@gmail.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TetianaBron/portfolio/issues"
+  },
+  "homepage": "https://tetianabron.github.io/portfolio/",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "gh-pages": "^3.2.3",
