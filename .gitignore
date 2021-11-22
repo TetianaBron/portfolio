@@ -3,13 +3,17 @@
 # dependencies
 /node_modules
 
+# Nuxt.js build / generate output
+.nuxt
+dist
+
 # testing
 /coverage
 
 # production
 /build
 
-dist
+
 
 # misc
 .DS_Store
