@@ -1,0 +1,36 @@
+.sidepanel {
+  position: fixed;
+  top: 230px;
+  left: 50px;
+  display: inline-flex;
+  z-index: 3;
+  height: 340px;
+  transform: rotate(-90deg);
+  &__items {
+    display: flex;
+  }
+  &__text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #fff;
+      height: 2px;
+      width: 70px;
+      margin-left: 15px;
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    fill: #fff;
+    &:hover {
+      fill: $main-color;
+    }
+  }
+}
