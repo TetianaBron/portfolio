@@ -31,6 +31,10 @@ a {
   }
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -42,3 +46,4 @@ a {
 @import 'blocks/sidepanel';
 @import 'blocks/hamburger';
 @import 'blocks/menu';
+@import 'blocks/about';

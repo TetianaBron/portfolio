@@ -12,3 +12,13 @@
     background: $main-color;
   }
 }
+
+@mixin after_divider {
+  &:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: $main-color;
+  }
+}
