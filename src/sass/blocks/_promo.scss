@@ -11,13 +11,13 @@
   &__title {
     width: 520px;
     margin-top: 10px;
-    color: #fff;
+    color: $white-color;
   }
   &__subtitle {
     position: relative;
     z-index: 1;
     padding-left: 10px;
-    color: #fff;
+    color: $white-color;
     @include before_circle;
   }
   &__btns {
@@ -30,6 +30,6 @@
   &__link {
     font-weight: bold;
     font-size: 14px;
-    color: #fff;
+    color: $white-color;
   }
 }

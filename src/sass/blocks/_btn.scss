@@ -5,12 +5,13 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   z-index: 4;
   &:hover {
-    color: #fff;
+    color: $white-color;
     background: $main-hover-color;
   }
   &_trans {
     background: transparent;
     box-shadow: none;
+    transition: all 0.6s;
     &:hover {
       color: $main-color;
       background: transparent;
