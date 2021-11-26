@@ -179,7 +179,7 @@
         <nav>
           <ul class="menu__list">
             <li class="menu__link"><a href="#about">ОБО МНE</a></li>
-            <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
+            <li class="menu__link"><a href="#experience">МОЙ ОПЫТ</a></li>
             <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
             <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
             <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
@@ -247,13 +247,13 @@
         </h1>
         <div class="promo__btns">
           <a href="#" class="promo__link btn">Портфолио</a>
-          <a href="#" class="promo__link btn btn_trans">Обо мне</a>
+          <a href="#about" class="promo__link btn btn_trans">Обо мне</a>
         </div>
       </div>
     </section>
     <section class="about" id="about">
       <div class="container">
-        <div class="about__gridContainer">
+        <div class="about__grid-container">
           <div class="about__img">
             <img src="./img/main_cut.jpg" alt="me" />
           </div>
@@ -273,8 +273,8 @@
 
           <ul class="about__skills">
             <li class="about__skill">
-              <div class="about__skill-icon-wrapper">
-                <svg class="about__skill-icon">
+              <div class="icon__wrapper">
+                <svg class="icon">
                   <use
                     href="./icons/sprite.svg#about_me--web_development"
                   ></use>
@@ -289,8 +289,8 @@
               </div>
             </li>
             <li class="about__skill">
-              <div class="about__skill-icon-wrapper">
-                <svg class="about__skill-icon">
+              <div class="icon__wrapper">
+                <svg class="icon">
                   <use href="./icons/sprite.svg#about_me--developer"></use>
                 </svg>
               </div>
@@ -305,8 +305,8 @@
               </div>
             </li>
             <li class="about__skill">
-              <div class="about__skill-icon-wrapper">
-                <svg class="about__skill-icon">
+              <div class="icon__wrapper">
+                <svg class="icon">
                   <use href="./icons/sprite.svg#about_me--programmer"></use>
                 </svg>
               </div>
@@ -315,14 +315,14 @@
                   Javascript-программист
                 </h3>
                 <p class="about__skill-text">
-                  Чистый код и понятный код - это приоритет. Делая комментарии
-                  мы облегчаем жизнь в первую очередь себе.
+                  Чистый и понятный код - это приоритет. Делая комментарии мы
+                  облегчаем жизнь в первую очередь себе.
                 </p>
               </div>
             </li>
             <li class="about__skill">
-              <div class="about__skill-icon-wrapper">
-                <svg class="about__skill-icon">
+              <div class="icon__wrapper">
+                <svg class="icon">
                   <use href="./icons/sprite.svg#about_me--mobile_dev"></use>
                 </svg>
               </div>
@@ -337,6 +337,149 @@
               </div>
             </li>
           </ul>
+        </div>
+      </div>
+    </section>
+    <section class="experience" id="experience">
+      <div class="container">
+        <h2 class="title title_fs16 experience__title">Опыт</h2>
+        <p class="title experience__subtitle">Мой путь</p>
+        <div class="experience__grid-container">
+          <div class="experience__column">
+            <h3 class="title title_fs20 experience__column-title">
+              Образование
+            </h3>
+            <ul>
+              <li class="experience__item-grid-container">
+                <div class="icon__wrapper">
+                  <svg class="icon">
+                    <use href="./icons/sprite.svg#experience--english"></use>
+                  </svg>
+                </div>
+                <div class="experience__head">
+                  <h4 class="title title_fs14">JustSchool</h4>
+                  <p class="experience__text">English (2021-сейчас)</p>
+                </div>
+                <div class="experience__item-text">
+                  <p class="experience__text">
+                    Занятия с носителями языка 2 раза в неделю
+                  </p>
+                  <p class="experience__text">Level: Intermediate</p>
+                </div>
+              </li>
+              <li class="experience__item-grid-container">
+                <div class="icon__wrapper">
+                  <svg class="icon">
+                    <use href="./icons/sprite.svg#experience--udemy"></use>
+                  </svg>
+                </div>
+                <div class="experience__head">
+                  <h4 class="title title_fs14">Udemy</h4>
+                  <p class="experience__text">Курс Web-разработчик-2021</p>
+                </div>
+                <div class="experience__item-text">
+                  <p class="experience__text">Автор: Иван Петриченко</p>
+                  <p class="experience__text">
+                    96 леций (33,5 часов), 4 проекта
+                  </p>
+                </div>
+              </li>
+
+              <li class="experience__item-grid-container">
+                <div class="icon__wrapper">
+                  <svg class="icon">
+                    <use href="./icons/sprite.svg#experience--goit"></use>
+                  </svg>
+                </div>
+                <div class="experience__head">
+                  <h4 class="title title_fs14">GOIT</h4>
+                  <p class="experience__text">
+                    Курс Full-stack developer (2020-2021)
+                  </p>
+                </div>
+                <div class="experience__item-text">
+                  <p class="experience__text">
+                    Автор: Александр Репета, Юрий Кучма
+                  </p>
+                  <ul>
+                    <li class="experience__text">
+                      8 модулей HTML+CSS - 1 проект
+                    </li>
+                    <li class="experience__text">14 модулей JS - 3 проекта</li>
+                    <li class="experience__text">
+                      8 модулей REACT - 2 проекта
+                    </li>
+                    <li class="experience__text">
+                      6 модулей NODE.JS - 1 проект
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="experience__item-grid-container">
+                <div class="icon__wrapper">
+                  <svg class="icon">
+                    <use href="./icons/sprite.svg#experience--university"></use>
+                  </svg>
+                </div>
+                <div class="experience__head">
+                  <h4 class="title title_fs14">
+                    Национальная академия внутренних дел
+                  </h4>
+                  <p class="experience__text">Диплом пециалиста (2004-2009)</p>
+                </div>
+                <div class="experience__item-text">
+                  <p class="experience__text">Специальность: правоведение</p>
+                  <p class="experience__text">Квалификация: юрист</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="experience__column">
+            <h3 class="title title_fs20 experience__column-title">
+              Опыт работы
+            </h3>
+            <ul>
+              <li class="experience__item-grid-container">
+                <div class="icon__wrapper">
+                  <svg class="icon">
+                    <use href="./icons/sprite.svg#experience--developer"></use>
+                  </svg>
+                </div>
+                <div class="experience__head">
+                  <h4 class="title title_fs14">GOIT</h4>
+                  <p class="experience__text">
+                    Практика командной работы со студентами (2021)
+                  </p>
+                </div>
+                <div class="experience__item-text">
+                  <p class="experience__text">Методология: скрам</p>
+                  <p class="experience__text">3 командных проекта</p>
+                </div>
+              </li>
+              <li class="experience__item-grid-container">
+                <div class="icon__wrapper">
+                  <svg class="icon">
+                    <use href="./icons/sprite.svg#experience--working"></use>
+                  </svg>
+                </div>
+                <div class="experience__head">
+                  <h4 class="title title_fs14">Начальник отдела</h4>
+                  <p class="experience__text">
+                    Офис Генерального прокурора (2012-2021)
+                  </p>
+                </div>
+                <div class="experience__item-text">
+                  <p class="experience__text">
+                    Внедрение систем электронного документооборота, разработка
+                    технического задания программистам, тестирование новых
+                    версий продукта, обучение персонала работы с функционалом,
+                    организация работы отдела документального обеспечения
+                    руководства Офиса
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

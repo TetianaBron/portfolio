@@ -2,7 +2,7 @@
   padding-top: 120px;
   min-height: 600px;
 
-  &__gridContainer {
+  &__grid-container {
     display: grid;
     grid-template-columns: 400px 670px;
     grid-template-rows: minmax(245px, auto) minmax(255px, auto);
@@ -47,18 +47,7 @@
     grid-template-columns: 40px 1fr;
     align-items: start;
     column-gap: 20px;
-    &-icon-wrapper {
-      position: relative;
-      z-index: 1;
-      padding-left: 15px;
-      padding-top: 15px;
-      @include before_circle;
-    }
-    &-icon {
-      width: 25px;
-      height: 25px;
-      fill: $black-color;
-    }
+
     &-title {
       margin-bottom: 6px;
     }
