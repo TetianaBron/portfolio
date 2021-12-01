@@ -17,4 +17,16 @@
   &_fs48 {
     font-size: 48px;
   }
+  &__section-title {
+    position: relative;
+    text-align: center;
+    @include before_circle_centered;
+  }
+  &__section_subtitle {
+    text-align: center;
+    @include after_divider_centered_mb25;
+    &_mt60 {
+      margin-top: 60px;
+    }
+  }
 }

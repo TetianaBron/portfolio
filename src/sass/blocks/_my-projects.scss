@@ -1,0 +1,101 @@
+.my-projects {
+  padding-top: 120px;
+  &__grid-container {
+    margin-top: 60px;
+    display: grid;
+    grid-template: repeat(2, 280px) / repeat(4, 280px);
+    grid-auto-rows: 280px;
+    gap: 5px;
+    .uber {
+      grid-row: 1/3;
+    }
+    .webStudio,
+    .phoneBook {
+      grid-column: 2/4;
+    }
+    .pulse {
+      grid-row: 1/3;
+      grid-column: 4/5;
+    }
+    .timer {
+      grid-column: 1/3;
+    }
+    .countdownTimer {
+      grid-column: 3/5;
+    }
+    .findImagesJS {
+      grid-row: 4/6;
+    }
+    .news {
+      grid-column: 2/4;
+      grid-row: 4/6;
+    }
+    .words {
+      grid-column: 4/5;
+      grid-row: 4/6;
+    }
+    .findingMovies {
+      grid-column: 1/3;
+    }
+    .findingImagesReact {
+      grid-column: 3/5;
+    }
+    .barbershop {
+      grid-column: 1/3;
+      grid-row: 1/3;
+    }
+    .marketPlace {
+      grid-column: 3/6;
+      grid-row: 1/3;
+    }
+    .notes {
+      grid-row: 3/5;
+      grid-column: 1/6;
+    }
+  }
+  &__item {
+    position: relative;
+  }
+  &__overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.6s;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  &__links {
+    position: absolute;
+    // right: 10px;
+    // bottom: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__link {
+    &:not(:first-child) {
+      margin-left: 5px;
+    }
+  }
+  &__icon {
+    width: 40px;
+    height: 40px;
+    fill: $white-color;
+    transition: all 0.6s;
+    &:hover {
+      fill: $main-color;
+    }
+  }
+}

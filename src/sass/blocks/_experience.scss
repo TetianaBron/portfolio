@@ -8,15 +8,6 @@
     row-gap: 60px;
     column-gap: 136px;
   }
-  &__title {
-    position: relative;
-    text-align: center;
-    @include before_circle_centered;
-  }
-  &__subtitle {
-    text-align: center;
-    @include after_divider_centered_mb25;
-  }
   &__column {
     position: relative;
     padding-left: 42px;

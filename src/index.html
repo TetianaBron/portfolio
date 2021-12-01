@@ -181,7 +181,7 @@
             <li class="menu__link"><a href="#about">ОБО МНE</a></li>
             <li class="menu__link"><a href="#experience">МОЙ ОПЫТ</a></li>
             <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
-            <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
+            <li class="menu__link"><a href="#my-projects">МОИ РАБОТЫ</a></li>
             <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
           </ul>
         </nav>
@@ -246,7 +246,7 @@
           Я web-разработчик из города Киев
         </h1>
         <div class="promo__btns">
-          <a href="#" class="promo__link btn">Портфолио</a>
+          <a href="#my-projects" class="promo__link btn">Портфолио</a>
           <a href="#about" class="promo__link btn btn_trans">Обо мне</a>
         </div>
       </div>
@@ -343,8 +343,8 @@
     </section>
     <section class="experience" id="experience">
       <div class="container">
-        <h2 class="title title_fs16 experience__title">Опыт</h2>
-        <p class="title experience__subtitle">Мой путь</p>
+        <h2 class="title title_fs16 title__section-title">Опыт</h2>
+        <p class="title title__section_subtitle">Мой путь</p>
         <div class="experience__grid-container">
           <div class="experience__column">
             <h3 class="title title_fs20 experience__column-title">
@@ -486,8 +486,8 @@
     </section>
     <section class="skills" id="skills">
       <div class="container">
-        <h2 class="title title_fs16 skills__title">Навыки</h2>
-        <p class="title skills__subtitle">Что я использую в работе</p>
+        <h2 class="title title_fs16 title__section-title">Навыки</h2>
+        <p class="title title__section_subtitle">Что я использую в работе</p>
         <ul class="skills__items">
           <li class="skills__item">
             <svg class="skills__item-icon">
@@ -511,7 +511,7 @@
             <svg class="skills__item-icon">
               <use href="./icons/sprite.svg#skills--bem"></use>
             </svg>
-            <p class="title title_fs14 skills__item-text">БЭМ</p>
+            <p class="title title_fs14 skills__item-text">BEM</p>
           </li>
           <li class="skills__item">
             <svg class="skills__item-icon">
@@ -579,7 +579,7 @@
             </svg>
             <p class="title title_fs14 skills__item-text">VS Code</p>
           </li>
-          <li class="skills__item">
+          <li class="skills__item google">
             <svg class="skills__item-icon">
               <use href="./icons/sprite.svg#skills--google"></use>
             </svg>
@@ -625,6 +625,540 @@
             <div class="skills__rating-item-line">
               <span></span>
             </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="my-projects" id="my-projects">
+      <div class="container">
+        <h2 class="title title_fs16 title__section-title">Портфолио</h2>
+        <p class="title title__section_subtitle">Мои личные проекты</p>
+        <ul class="my-projects__grid-container">
+          <li class="my-projects__item uber">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/uber/blob/main/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://tetianabron.github.io/uber/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/uber"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img src="img/my/uber.jpg" alt="uber" class="my-projects__img" />
+          </li>
+          <li class="my-projects__item webStudio">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/goit-markup-hw-08/blob/master/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://tetianabron.github.io/goit-markup-hw-08/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/goit-markup-hw-08"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img
+              src="img/my/webStudio.jpg"
+              alt="webStudio"
+              class="my-projects__img"
+            />
+          </li>
+          <li class="my-projects__item phoneBook">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/goit-react-hw-09-phonebook/blob/main/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://tetianabron-phonebook-hooks.netlify.app/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/goit-react-hw-09-phonebook"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img
+              src="img/my/phoneBook.jpg"
+              alt="phoneBook"
+              class="my-projects__img"
+            />
+          </li>
+          <li class="my-projects__item pulse">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/pulse/blob/main/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://tetianabron.github.io/pulse/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/pulse"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img src="img/my/pulse.jpg" alt="pulse" class="my-projects__img" />
+          </li>
+          <li class="my-projects__item timer">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/timer/blob/main/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://tetianabron.github.io/timer/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/timer"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img src="img/my/timer.jpg" alt="timer" class="my-projects__img" />
+          </li>
+          <li class="my-projects__item countdownTimer">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/countdown_timer/blob/main/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://tetianabron.github.io/countdown_timer/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/countdown_timer"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img
+              src="img/my/countdownTimer.jpg"
+              alt="countdown timer"
+              class="my-projects__img"
+            />
+          </li>
+          <li class="my-projects__item findImagesJS">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/goit-js-hw-13-image-finder/blob/main/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://tetianabron.github.io/goit-js-hw-13-image-finder/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/goit-js-hw-13-image-finder"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img
+              src="img/my/findImagesJS.jpg"
+              alt="finding images JS"
+              class="my-projects__img"
+            />
+          </li>
+          <li class="my-projects__item news">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/news-api/blob/main/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://tetianabron.github.io/news-api/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/news-api"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img src="img/my/news.jpg" alt="news" class="my-projects__img" />
+          </li>
+          <li class="my-projects__item words">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/words-app-tb/blob/main/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://words-app-tb-github.herokuapp.com/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/words-app-tb"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img src="img/my/words.jpg" alt="words" class="my-projects__img" />
+          </li>
+          <li class="my-projects__item findingMovies">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/goit-react-hw-04-movies/blob/main/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://tb-themoviedb-org.netlify.app/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/goit-react-hw-04-movies"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img
+              src="img/my/findingMovies.jpg"
+              alt="finding movies"
+              class="my-projects__img"
+            />
+          </li>
+          <li class="my-projects__item findingImagesReact">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/goit-react-hw-09-images/blob/main/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://tetianabron.github.io/goit-react-hw-09-images/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/goit-react-hw-09-images"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img
+              src="img/my/findingImagesReact.jpg"
+              alt="finding images React"
+              class="my-projects__img"
+            />
+          </li>
+        </ul>
+        <p class="title title__section_subtitle title__section_subtitle_mt60">
+          Командные проекты
+        </p>
+        <ul class="my-projects__grid-container">
+          <li class="my-projects__item barbershop">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/barbershop/blob/master/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://project1-max.github.io/barbershop/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/barbershop"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img
+              src="img/team/barberShop.jpg"
+              alt="barbershop"
+              class="my-projects__img"
+            />
+          </li>
+          <li class="my-projects__item marketPlace">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/project5-advertising-site/blob/dev/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="http://e66968xz.beget.tech/"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/project5-advertising-site"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img
+              src="img/team/marketPlace.jpg"
+              alt="market place"
+              class="my-projects__img"
+            />
+          </li>
+          <li class="my-projects__item notes">
+            <div class="my-projects__overlay">
+              <div class="my-projects__links">
+                <a
+                  href="https://github.com/TetianaBron/questify-front/blob/main/README.md"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--description"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://questifyapp.netlify.app/auth"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#projects--link"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/questify-front"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/TetianaBron/questify-back"
+                  target="_blank"
+                  class="my-projects__link"
+                >
+                  <svg class="my-projects__icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img
+              src="img/team/notes.jpg"
+              alt="notes"
+              class="my-projects__img"
+            />
           </li>
         </ul>
       </div>

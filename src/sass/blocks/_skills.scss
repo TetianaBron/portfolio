@@ -1,14 +1,5 @@
 .skills {
   padding-top: 120px;
-  &__title {
-    position: relative;
-    text-align: center;
-    @include before_circle_centered;
-  }
-  &__subtitle {
-    text-align: center;
-    @include after_divider_centered_mb25;
-  }
   &__items {
     margin: 60px auto 0 auto;
     padding: 0 13px;
@@ -17,7 +8,9 @@
     gap: 13px;
     max-width: calc(100vw - 26px);
     grid-auto-rows: 1fr;
-    // justify-content: center;
+    .google {
+      display: none;
+    }
   }
   &__item {
     border: 1px solid $black-color;
@@ -65,7 +58,6 @@
       &-line {
         width: 350px;
         height: 14px;
-        // margin-top: 27px;
         background-color: $grey-color;
         border-radius: 4px;
         grid-column: 1 / 3;
