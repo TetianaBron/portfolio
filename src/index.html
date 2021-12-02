@@ -182,7 +182,7 @@
             <li class="menu__link"><a href="#experience">МОЙ ОПЫТ</a></li>
             <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
             <li class="menu__link"><a href="#my-projects">МОИ РАБОТЫ</a></li>
-            <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+            <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
           </ul>
         </nav>
         <ul class="menu__social-items">
@@ -220,7 +220,7 @@
             </a>
           </li>
           <li class="menu__social-item">
-            <a href="#" aria-label="ссылка на skype">
+            <a href="skype:tanya_nest?userinfo" aria-label="ссылка на skype">
               <svg class="menu__social-icon">
                 <use href="./icons/sprite.svg#social--skype"></use>
               </svg>
@@ -246,8 +246,8 @@
           Я web-разработчик из города Киев
         </h1>
         <div class="promo__btns">
-          <a href="#my-projects" class="promo__link btn">Портфолио</a>
-          <a href="#about" class="promo__link btn btn_trans">Обо мне</a>
+          <a href="#my-projects" class="btn">Портфолио</a>
+          <a href="#about" class="btn btn_trans">Обо мне</a>
         </div>
       </div>
     </section>
@@ -255,7 +255,7 @@
       <div class="container">
         <div class="about__grid-container">
           <div class="about__img">
-            <img src="./img/main_cut.jpg" alt="me" />
+            <img src="./img/main.jpg" alt="me" />
           </div>
           <div class="about__summary">
             <h2 class="title title_fs16 about__title">Обо мне</h2>
@@ -1036,7 +1036,9 @@
         <p class="title title__section_subtitle title__section_subtitle_mt60">
           Командные проекты
         </p>
-        <ul class="my-projects__grid-container">
+        <ul
+          class="my-projects__grid-container my-projects__grid-container_team"
+        >
           <li class="my-projects__item barbershop">
             <div class="my-projects__overlay">
               <div class="my-projects__links">
@@ -1161,6 +1163,95 @@
             />
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__grid-container">
+          <div class="contacts__img">
+            <img src="./img/main2.jpg" alt="me" />
+          </div>
+          <div class="contacts__descr">
+            <h2 class="title title_fs16 contacts__title">Контакты</h2>
+            <p class="title contacts__subtitle">Свяжитесь со мной</p>
+            <p class="contacts__text">Любым удобным для вас способом:</p>
+            <ul class="contacts__social-items">
+              <li class="contacts__social-item">
+                <a
+                  href="https://github.com/TetianaBron"
+                  target="_blank"
+                  aria-label="ссылка на github"
+                >
+                  <svg class="contacts__social-icon">
+                    <use href="./icons/sprite.svg#social--github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a
+                  href="https://www.linkedin.com/in/tetiana-bronitska/"
+                  target="_blank"
+                  aria-label="ссылка на linkedin"
+                >
+                  <svg class="contacts__social-icon">
+                    <use href="./icons/sprite.svg#social--linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a
+                  href="tg://resolve?domain=TetianaBron"
+                  target="_blank"
+                  aria-label="ссылка на telegram"
+                >
+                  <svg class="contacts__social-icon">
+                    <use href="./icons/sprite.svg#social--telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a
+                  href="skype:tanya_nest?userinfo"
+                  aria-label="ссылка на skype"
+                >
+                  <svg class="contacts__social-icon">
+                    <use href="./icons/sprite.svg#social--skype"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a
+                  href="mailto: tetiana.bron@gmail.com"
+                  aria-label="ссылка на email"
+                >
+                  <svg class="contacts__social-icon">
+                    <use href="./icons/sprite.svg#social--mail"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="contacts__text">
+              Или оставьте ваши данные и я сама вам напишу:
+            </p>
+            <form action="#" class="contacts__form">
+              <div class="contacts__input">
+                <input name="name" id="name" type="text" />
+                <label for="name">Ваше имя</label>
+              </div>
+              <div class="contacts__input">
+                <input name="email" id="email" type="email" />
+                <label for="email">Ваша почта</label>
+              </div>
+              <div class="contacts__textarea">
+                <textarea name="text" id="text"></textarea>
+                <label for="text">Ваше сообщение</label>
+              </div>
+              <div>
+                <button class="btn btn_black">Отправить сообщение</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
     <script src="js/script.js"></script>

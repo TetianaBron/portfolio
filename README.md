@@ -4,9 +4,9 @@ Adaptive design using
 
 ## Technologies are used:
 
+- GULP;
 - HTML5;
 - SASS;
-- GULP;
 - css-grids,;
 - JS;
 - meta tags for social media;

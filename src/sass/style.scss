@@ -27,7 +27,8 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
-  &:hover {
+  &:hover,
+  &:focus {
     color: inherit;
   }
 }
@@ -52,3 +53,4 @@ img {
 @import 'blocks/icons';
 @import 'blocks/skills';
 @import 'blocks/my-projects';
+@import 'blocks/_contacts';
