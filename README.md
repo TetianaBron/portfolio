@@ -7,7 +7,10 @@ Adaptive design using
 - GULP;
 - HTML5;
 - SASS;
-- css-grids,;
+- css-grids;
 - JS;
+- Node.JS;
+- Express;
+- Nodemailer;
 - meta tags for social media;
 - favicon for different devices
