@@ -88,4 +88,26 @@
       font-size: 12px;
     }
   }
+  &__triggers {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    a {
+      color: #2306d6;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__policy {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    input {
+      margin-right: 10px;
+    }
+  }
 }

@@ -15,6 +15,7 @@ const refs = {
 let naming = document.getElementById('naming');
 let email = document.getElementById('email');
 let text = document.getElementById('text');
+let checkbox = document.getElementById('checkbox');
 
 refs.hamburger.addEventListener('click', () => {
   refs.menu.classList.add('active');
@@ -50,12 +51,17 @@ refs.contactForm.addEventListener('submit', e => {
   xhr.onload = function () {
     console.log(xhr.responseText);
     if (xhr.responseText == 'success') {
-      alert('Email sent');
+      alert(
+        'Ваше сообщение успешно отправлено. Я свяжусь с Вами в ближайшее время!',
+      );
       naming.value = '';
       email.value = '';
       text.value = '';
+      checkbox.checked = false;
     } else {
-      alert('Something went wrong');
+      alert(
+        'Ваше сообщение не отправлено! Что-то пошло не так! Попробуйте позже!',
+      );
     }
   };
   xhr.send(JSON.stringify(formData));
