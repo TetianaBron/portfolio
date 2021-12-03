@@ -16,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/TetianaBron/portfolio/issues"
   },
-  "homepage": "https://tetianabron.github.io/portfolio/",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
