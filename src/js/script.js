@@ -9,6 +9,8 @@ const refs = {
   lines: document.querySelectorAll('.skills__rating-item-line span'),
   //For sending data to email
   contactForm: document.querySelector('.contacts__form'),
+  //For scrolling up
+  upElem: document.querySelector('.scroll-up'),
 };
 
 //elements in contact form
@@ -66,3 +68,56 @@ refs.contactForm.addEventListener('submit', e => {
   };
   xhr.send(JSON.stringify(formData));
 });
+
+//scrolling up
+
+window.addEventListener('scroll', () => {
+  if (document.documentElement.scrollTop > 1600) {
+    refs.upElem.classList.add('animate__animated', 'animate__fadeIn');
+    refs.upElem.classList.remove('animate__fadeOut');
+  } else {
+    refs.upElem.classList.add('animate__fadeOut');
+    refs.upElem.classList.remove('animate__fadeIn');
+  }
+});
+
+// Smooth scrolling for all links
+
+let links = document.querySelectorAll('[href^="#"]'),
+  speed = 0.3;
+
+links.forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    let widthTop = document.documentElement.scrollTop,
+      hash = this.hash,
+      toBlock = document.querySelector(hash).getBoundingClientRect().top,
+      start = null;
+
+    requestAnimationFrame(step);
+
+    function step(time) {
+      if (start === null) {
+        start = time;
+      }
+
+      let progress = time - start,
+        r =
+          toBlock < 0
+            ? Math.max(widthTop - progress / speed, widthTop + toBlock)
+            : Math.min(widthTop + progress / speed, widthTop + toBlock);
+
+      document.documentElement.scrollTo(0, r);
+
+      if (r != widthTop + toBlock) {
+        requestAnimationFrame(step);
+      } else {
+        location.hash = hash;
+      }
+    }
+  });
+});
+
+//For init wow.js lib
+new WOW().init();

@@ -230,7 +230,7 @@
       </div>
       <div class="menu__overlay"></div>
     </div>
-    <section class="promo">
+    <section id="promo" class="promo">
       <button class="hamburger">
         <div class="hamburger__items">
           <span></span>
@@ -242,7 +242,9 @@
         <p class="title title_fs16 promo__subtitle">
           Меня зовут Татьяна Броницкая
         </p>
-        <h1 class="title title_fs48 promo__title">
+        <h1
+          class="title title_fs48 promo__title animate__animated animate__flip"
+        >
           Я web-разработчик из города Киев
         </h1>
         <div class="promo__btns">
@@ -259,7 +261,16 @@
           </div>
           <div class="about__summary">
             <h2 class="title title_fs16 about__title">Обо мне</h2>
-            <p class="title about__subtitle">Меня зовут Татьяна</p>
+            <p
+              class="
+                title
+                about__subtitle
+                wow
+                animate__animated animate__backInDown
+              "
+            >
+              Меня зовут Татьяна
+            </p>
             <p class="about__text">
               Верстаю сайты, разрабатываю приложения. Написание кода для меня
               процесс творения. Люблю наблюдать когда код превращается в
@@ -344,7 +355,15 @@
     <section class="experience" id="experience">
       <div class="container">
         <h2 class="title title_fs16 title__section-title">Опыт</h2>
-        <p class="title title__section_subtitle">Мой путь</p>
+        <p
+          class="
+            title title__section_subtitle
+            wow
+            animate__animated animate__backInDown
+          "
+        >
+          Мой путь
+        </p>
         <div class="experience__grid-container">
           <div class="experience__column">
             <h3 class="title title_fs20 experience__column-title">
@@ -487,7 +506,15 @@
     <section class="skills" id="skills">
       <div class="container">
         <h2 class="title title_fs16 title__section-title">Навыки</h2>
-        <p class="title title__section_subtitle">Что я использую в работе</p>
+        <p
+          class="
+            title title__section_subtitle
+            wow
+            animate__animated animate__backInDown
+          "
+        >
+          Что я использую в работе
+        </p>
         <ul class="skills__items">
           <li class="skills__item">
             <svg class="skills__item-icon">
@@ -632,7 +659,15 @@
     <section class="my-projects" id="my-projects">
       <div class="container">
         <h2 class="title title_fs16 title__section-title">Портфолио</h2>
-        <p class="title title__section_subtitle">Мои личные проекты</p>
+        <p
+          class="
+            title title__section_subtitle
+            wow
+            animate__animated animate__backInDown
+          "
+        >
+          Мои личные проекты
+        </p>
         <ul class="my-projects__grid-container">
           <li class="my-projects__item uber">
             <div class="my-projects__overlay">
@@ -1127,7 +1162,13 @@
             />
           </li>
         </ul>
-        <p class="title title__section_subtitle title__section_subtitle_mt60">
+        <p
+          class="
+            title title__section_subtitle title__section_subtitle_mt60
+            wow
+            animate__animated animate__backInDown
+          "
+        >
           Командные проекты
         </p>
         <ul
@@ -1289,7 +1330,16 @@
           </div>
           <div class="contacts__descr">
             <h2 class="title title_fs16 contacts__title">Контакты</h2>
-            <p class="title contacts__subtitle">Свяжитесь со мной</p>
+            <p
+              class="
+                title
+                contacts__subtitle
+                wow
+                animate__animated animate__backInDown
+              "
+            >
+              Свяжитесь со мной
+            </p>
             <p class="contacts__text">Любым удобным для вас способом:</p>
             <ul class="contacts__social-items">
               <li class="contacts__social-item">
@@ -1370,6 +1420,12 @@
         </div>
       </div>
     </section>
+    <a href="#promo" class="scroll-up">
+      <svg class="icon">
+        <use href="./icons/sprite.svg#btn--up"></use>
+      </svg>
+    </a>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
