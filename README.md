@@ -8,6 +8,7 @@ Adaptive design using
 - HTML5;
 - SASS;
 - css-grids;
+- libs - bootstrap.reboot, animate.css, wow.js;
 - JS;
 - Node.JS;
 - Express;
