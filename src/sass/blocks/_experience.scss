@@ -57,6 +57,11 @@
       background-color: $black-color;
     }
   }
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   &__item-text {
     grid-column: 1/3;
   }

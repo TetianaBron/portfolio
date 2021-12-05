@@ -1,51 +1,62 @@
-const refs = {
-  //Hamdurger menu
-  hamburger: document.querySelector('.hamburger'),
-  menu: document.querySelector('.menu'),
-  menuVBtnClose: document.querySelector('.menu__btn-close'),
-  menuList: document.querySelector('.menu__list'),
-  //Counting percent in skills section
-  counters: document.querySelectorAll('.skills__rating-item-counter'),
-  lines: document.querySelectorAll('.skills__rating-item-line span'),
-  //For sending data to email
-  contactForm: document.querySelector('.contacts__form'),
-  //For scrolling up
-  upElem: document.querySelector('.scroll-up'),
-};
+// For Hamdurger menu
+const hamburgerEl = document.querySelector('.hamburger');
+const menuEl = document.querySelector('.menu');
+const menuVBtnCloseEl = document.querySelector('.menu__btn-close');
 
-//elements in contact form
-let naming = document.getElementById('naming');
-let email = document.getElementById('email');
-let text = document.getElementById('text');
-let checkbox = document.getElementById('checkbox');
-
-refs.hamburger.addEventListener('click', () => {
-  refs.menu.classList.add('active');
+hamburgerEl.addEventListener('click', () => {
+  menuEl.classList.add('active');
 });
-refs.menuVBtnClose.addEventListener('click', () => {
-  refs.menu.classList.remove('active');
+menuVBtnCloseEl.addEventListener('click', () => {
+  menuEl.classList.remove('active');
 });
 
-//menu closes, when item is selected
-refs.menuList.addEventListener('click', e => {
+//For menu
+const menuListEl = document.querySelector('.menu__list');
+
+//Menu closes, when item is selected
+menuListEl.addEventListener('click', e => {
   if (e.target.nodeName !== 'A') {
     return;
   }
-  refs.menu.classList.remove('active');
+  menuListEl.classList.remove('active');
 });
 
-refs.counters.forEach((item, i) => {
-  refs.lines[i].style.width = item.textContent;
+//For counting percent in skills section
+const countersEl = document.querySelectorAll('.skills__rating-item-counter');
+const linesEl = document.querySelectorAll('.skills__rating-item-line span');
+
+//Counting percent in skills section
+countersEl.forEach((item, i) => {
+  linesEl[i].style.width = item.textContent;
 });
 
-//sending data to email
-refs.contactForm.addEventListener('submit', e => {
+//For form in contact section
+const contactFormEl = document.querySelector('.contacts__form');
+
+//elements in contact form
+let nameEl = document.getElementById('name');
+let emailEl = document.getElementById('email');
+let textEl = document.getElementById('text');
+let checkboxEl = document.getElementById('checkbox');
+
+//For saving data to LocalStorage and sending them to email
+
+const formData = {};
+initForm();
+
+contactFormEl.addEventListener('input', e => {
+  formData[e.target.name] = e.target.value;
+  const data = JSON.stringify(formData);
+
+  // finally save to localStorage
+  localStorage.setItem('data', data);
+});
+
+//Sending data to email
+contactFormEl.addEventListener('submit', e => {
   e.preventDefault();
-  let formData = {
-    naming: naming.value,
-    email: email.value,
-    text: text.value,
-  };
+
+  formData[e.target.name] = e.target.value;
 
   let xhr = new XMLHttpRequest();
   xhr.open('POST', '/');
@@ -56,10 +67,11 @@ refs.contactForm.addEventListener('submit', e => {
       alert(
         'Ваше сообщение успешно отправлено. Я свяжусь с Вами в ближайшее время!',
       );
-      naming.value = '';
-      email.value = '';
-      text.value = '';
-      checkbox.checked = false;
+      nameEl.value = '';
+      emailEl.value = '';
+      textEl.value = '';
+      checkboxEl.checked = false;
+      localStorage.removeItem('data');
     } else {
       alert(
         'Ваше сообщение не отправлено! Что-то пошло не так! Попробуйте позже!',
@@ -69,15 +81,31 @@ refs.contactForm.addEventListener('submit', e => {
   xhr.send(JSON.stringify(formData));
 });
 
-//scrolling up
+function initForm() {
+  // Receiving data from localStorage
+  let persistedData = localStorage.getItem('data');
+  if (persistedData) {
+    persistedData = JSON.parse(persistedData);
+    // If there is data, DOM is reloading
+    Object.entries(persistedData).forEach(([name, value]) => {
+      formData[name] = value;
+      contactFormEl.elements[name].value = value;
+    });
+  }
+}
+
+//For scrolling up
+const upEl = document.querySelector('.scroll-up');
+
+//Scrolling up
 
 window.addEventListener('scroll', () => {
   if (document.documentElement.scrollTop > 1600) {
-    refs.upElem.classList.add('animate__animated', 'animate__fadeIn');
-    refs.upElem.classList.remove('animate__fadeOut');
+    upEl.classList.add('animate__animated', 'animate__fadeIn');
+    upEl.classList.remove('animate__fadeOut');
   } else {
-    refs.upElem.classList.add('animate__fadeOut');
-    refs.upElem.classList.remove('animate__fadeIn');
+    upEl.classList.add('animate__fadeOut');
+    upEl.classList.remove('animate__fadeIn');
   }
 });
 

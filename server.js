@@ -35,7 +35,7 @@ app.post('/', (req, res) => {
     from: req.body.email,
     to: 'tanya_nest@ukr.net',
     subject: 'Message from my portfolio form',
-    text: `${req.body.text}. Отправитель: ${req.body.naming}, ${req.body.email}.`,
+    text: `${req.body.text}. Отправитель: ${req.body.name}, email: ${req.body.email}.`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
