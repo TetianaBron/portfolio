@@ -18,7 +18,7 @@ menuListEl.addEventListener('click', e => {
   if (e.target.nodeName !== 'A') {
     return;
   }
-  menuListEl.classList.remove('active');
+  menuEl.classList.remove('active');
 });
 
 //For counting percent in skills section
@@ -42,6 +42,7 @@ let checkboxEl = document.getElementById('checkbox');
 //For saving data to LocalStorage and sending them to email
 
 const formData = {};
+const LOCALSTORAGE_KEY = 'data';
 initForm();
 
 contactFormEl.addEventListener('input', e => {
@@ -49,7 +50,7 @@ contactFormEl.addEventListener('input', e => {
   const data = JSON.stringify(formData);
 
   // finally save to localStorage
-  localStorage.setItem('data', data);
+  localStorage.setItem(LOCALSTORAGE_KEY, data);
 });
 
 //Sending data to email
@@ -71,7 +72,7 @@ contactFormEl.addEventListener('submit', e => {
       emailEl.value = '';
       textEl.value = '';
       checkboxEl.checked = false;
-      localStorage.removeItem('data');
+      localStorage.removeItem(LOCALSTORAGE_KEY);
     } else {
       alert(
         'Ваше сообщение не отправлено! Что-то пошло не так! Попробуйте позже!',
@@ -83,7 +84,7 @@ contactFormEl.addEventListener('submit', e => {
 
 function initForm() {
   // Receiving data from localStorage
-  let persistedData = localStorage.getItem('data');
+  let persistedData = localStorage.getItem(LOCALSTORAGE_KEY);
   if (persistedData) {
     persistedData = JSON.parse(persistedData);
     // If there is data, DOM is reloading
@@ -112,7 +113,7 @@ window.addEventListener('scroll', () => {
 // Smooth scrolling for all links
 
 let links = document.querySelectorAll('[href^="#"]'),
-  speed = 0.3;
+  speed = 0.2;
 
 links.forEach(link => {
   link.addEventListener('click', function (event) {
