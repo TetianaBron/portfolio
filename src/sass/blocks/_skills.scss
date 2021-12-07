@@ -35,7 +35,8 @@
   &__rating {
     margin-top: 120px;
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     grid-template-rows: auto;
     gap: 45px;
     &-item {
@@ -56,7 +57,7 @@
         line-height: 21px;
       }
       &-line {
-        width: 350px;
+        width: 100%;
         height: 14px;
         background-color: $grey-color;
         border-radius: 4px;
