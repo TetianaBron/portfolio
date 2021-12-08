@@ -23,6 +23,50 @@
       }
     }
   }
+  .my-projects {
+    &__grid-container {
+      grid-template-columns: repeat(auto-fill, 280px);
+      row-gap: 35px;
+      justify-content: space-around;
+      .uber,
+      .webStudio,
+      .phoneBook,
+      .pulse,
+      .timer,
+      .countdownTimer,
+      .findImagesJS,
+      .news,
+      .words,
+      .findingMovies,
+      .findingImagesReact {
+        grid-column: unset;
+        grid-row: unset;
+      }
+      &_team {
+        grid-template: 280px / repeat(auto-fill, 280px);
+        grid-auto-rows: 280px;
+      }
+    }
+    &__img {
+      object-fit: cover;
+      object-position: top left;
+    }
+  }
+  .contacts {
+    &__grid-container {
+      display: block;
+    }
+    &__img {
+      display: none;
+    }
+    &__form {
+      grid-template: 45px 190px 45px / repeat(2, 1fr);
+      column-gap: 35px;
+    }
+    &__triggers {
+      justify-content: space-around;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -49,6 +93,10 @@
       }
     }
   }
+  .scroll-up {
+    right: 20px;
+    bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -68,6 +116,9 @@
       margin-top: 26px;
       &:after {
         margin-top: 15px;
+      }
+      &_mt60 {
+        margin-top: 40px;
       }
     }
   }
@@ -121,7 +172,18 @@
     }
     &__rating {
       margin-top: 40px;
+      grid-template-columns: minmax(260px, 350px);
+      justify-content: center;
     }
+  }
+  .my-projects {
+    padding-top: 45px;
+    &__grid-container {
+      margin-top: 40px;
+    }
+  }
+  .contacts {
+    padding-top: 45px;
   }
 }
 
@@ -163,6 +225,28 @@
     }
     &__item-grid-container {
       row-gap: 10px;
+    }
+  }
+  .contacts {
+    &__grid-container {
+      padding: 0;
+    }
+    &__form {
+      grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+    }
+    &__textarea {
+      grid-column: unset;
+    }
+    &__triggers {
+      grid-column: unset;
+      grid-template-columns: 1fr;
+    }
+    &__policy {
+      padding: 0 50px;
+      margin: 0 auto;
+    }
+    &__btn {
+      margin: 20px auto 0;
     }
   }
 }

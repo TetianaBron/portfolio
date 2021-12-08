@@ -4,7 +4,8 @@
     margin: 60px auto 0 auto;
     padding: 0 13px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(190px, 210px));
+    justify-content: center;
     gap: 13px;
     max-width: calc(100vw - 26px);
     grid-auto-rows: 1fr;
