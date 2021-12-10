@@ -56,13 +56,21 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: all 0.6s;
     opacity: 0;
     &:hover,
     &:focus {
       opacity: 1;
     }
+  }
+  &__about {
+    position: absolute;
+    padding: 0px 10px;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    color: $grey-color;
   }
   &__img {
     height: 100%;
@@ -90,7 +98,7 @@
   }
   &__link {
     &:not(:first-child) {
-      margin-left: 5px;
+      margin-left: 20px;
     }
   }
   &__icon {
@@ -102,5 +110,13 @@
     &:focus {
       fill: $main-color;
     }
+  }
+  &__technologies {
+    padding: 0 10px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: $grey-color;
   }
 }
