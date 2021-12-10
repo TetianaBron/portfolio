@@ -25,9 +25,9 @@
   }
   .my-projects {
     &__grid-container {
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fill, 280px);
       row-gap: 35px;
-      column-gap: 35px;
+      justify-content: space-around;
       .uber,
       .webStudio,
       .phoneBook,
@@ -242,8 +242,8 @@
       grid-template-columns: 1fr;
     }
     &__policy {
-      padding: 0 50px;
       margin: 0 auto;
+      text-align: center;
     }
     &__btn {
       margin: 20px auto 0;

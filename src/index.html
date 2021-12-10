@@ -405,8 +405,14 @@
                   </svg>
                 </div>
                 <div class="experience__head">
-                  <h4 class="title title_fs14">Udemy</h4>
-                  <p class="experience__text">Курс Web-разработчик-2021</p>
+                  <a
+                    class="experience__link"
+                    href="https://www.udemy.com/certificate/UC-5492e87d-2e6f-461b-b58f-6c30f697a457"
+                    target="_black"
+                  >
+                    <h4 class="title title_fs14">Udemy</h4>
+                    <p class="experience__text">Курс Web-разработчик-2021</p>
+                  </a>
                 </div>
                 <div class="experience__item-text">
                   <p class="experience__text">Автор: Иван Петриченко</p>
@@ -485,12 +491,12 @@
                 <div class="experience__head">
                   <h4 class="title title_fs14">GOIT</h4>
                   <p class="experience__text">
-                    Практика командной работы со студентами (2021)
+                    Практика командной работы (2021)
                   </p>
                 </div>
                 <div class="experience__item-text">
                   <p class="experience__text">Методология: скрам</p>
-                  <p class="experience__text">3 командных проекта</p>
+                  <p class="experience__text">3 проекта</p>
                 </div>
               </li>
               <li class="experience__item-grid-container">
@@ -768,11 +774,21 @@
                 </ul>
               </div>
             </div>
-            <img
-              src="img/my/webStudio.jpg"
-              alt="webStudio"
-              class="my-projects__img"
-            />
+            <picture>
+              <source
+                media="(max-width: 1200px)"
+                srcset="img/my/min/webStudio_min.jpg"
+              />
+              <source
+                media="(min-width: 1201px)"
+                srcset="img/my/webStudio.jpg"
+              />
+              <img
+                src="img/my/webStudio.jpg"
+                alt="webStudio"
+                class="my-projects__img"
+              />
+            </picture>
           </li>
           <li class="my-projects__item phoneBook">
             <div class="my-projects__overlay">
@@ -814,11 +830,21 @@
                 </ul>
               </div>
             </div>
-            <img
-              src="img/my/phoneBook.jpg"
-              alt="phoneBook"
-              class="my-projects__img"
-            />
+            <picture>
+              <source
+                media="(max-width: 1200px)"
+                srcset="img/my/min/phoneBook_min.jpg"
+              />
+              <source
+                media="(min-width: 1201px)"
+                srcset="img/my/phoneBook.jpg"
+              />
+              <img
+                src="img/my/phoneBook.jpg"
+                alt="phoneBook"
+                class="my-projects__img"
+              />
+            </picture>
           </li>
           <li class="my-projects__item pulse">
             <div class="my-projects__overlay">
@@ -902,7 +928,18 @@
                 </ul>
               </div>
             </div>
-            <img src="img/my/timer.jpg" alt="timer" class="my-projects__img" />
+            <picture>
+              <source
+                media="(max-width: 1200px)"
+                srcset="img/my/min/timer_min.jpg"
+              />
+              <source media="(min-width: 1201px)" srcset="img/my/timer.jpg" />
+              <img
+                src="img/my/timer.jpg"
+                alt="timer"
+                class="my-projects__img"
+              />
+            </picture>
           </li>
           <li class="my-projects__item countdownTimer">
             <div class="my-projects__overlay">
@@ -944,11 +981,21 @@
                 </ul>
               </div>
             </div>
-            <img
-              src="img/my/countdownTimer.jpg"
-              alt="countdown timer"
-              class="my-projects__img"
-            />
+            <picture>
+              <source
+                media="(max-width: 1200px)"
+                srcset="img/my/min/countdownTimer_min.jpg"
+              />
+              <source
+                media="(min-width: 1201px)"
+                srcset="img/my/countdownTimer.jpg"
+              />
+              <img
+                src="img/my/countdownTimer.jpg"
+                alt="countdown timer"
+                class="my-projects__img"
+              />
+            </picture>
           </li>
           <li class="my-projects__item findImagesJS">
             <div class="my-projects__overlay">
@@ -1120,11 +1167,21 @@
                 </ul>
               </div>
             </div>
-            <img
-              src="img/my/findingMovies.jpg"
-              alt="finding movies"
-              class="my-projects__img"
-            />
+            <picture>
+              <source
+                media="(max-width: 1200px)"
+                srcset="img/my/min/findingMovies_min.jpg"
+              />
+              <source
+                media="(min-width: 1201px)"
+                srcset="img/my/findingMovies.jpg"
+              />
+              <img
+                src="img/my/findingMovies.jpg"
+                alt="finding movies"
+                class="my-projects__img"
+              />
+            </picture>
           </li>
           <li class="my-projects__item findingImagesReact">
             <div class="my-projects__overlay">
@@ -1166,11 +1223,21 @@
                 </ul>
               </div>
             </div>
-            <img
-              src="img/my/findingImagesReact.jpg"
-              alt="finding images React"
-              class="my-projects__img"
-            />
+            <picture>
+              <source
+                media="(max-width: 1200px)"
+                srcset="img/my/min/findingImagesReact_min.jpg"
+              />
+              <source
+                media="(min-width: 1201px)"
+                srcset="img/my/findingImagesReact.jpg"
+              />
+              <img
+                src="img/my/findingImagesReact.jpg"
+                alt="finding images React"
+                class="my-projects__img"
+              />
+            </picture>
           </li>
         </ul>
         <p

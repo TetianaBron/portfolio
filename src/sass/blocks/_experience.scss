@@ -30,6 +30,7 @@
     }
   }
   &__item-grid-container {
+    z-index: 4;
     position: relative;
     display: grid;
     grid-template-columns: 36px 1fr;
