@@ -47,6 +47,13 @@
         grid-auto-rows: 280px;
       }
     }
+    &__item {
+      transition: all 0.6s;
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
+    }
     &__img {
       object-fit: cover;
       object-position: top left;
