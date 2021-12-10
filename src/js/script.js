@@ -112,41 +112,41 @@ window.addEventListener('scroll', () => {
 
 // Smooth scrolling for all links
 
-let links = document.querySelectorAll('[href^="#"]'),
-  speed = 0.2;
+// let links = document.querySelectorAll('[href^="#"]'),
+//   speed = 0.2;
 
-links.forEach(link => {
-  link.addEventListener('click', function (event) {
-    event.preventDefault();
+// links.forEach(link => {
+//   link.addEventListener('click', function (event) {
+//     event.preventDefault();
 
-    let widthTop = document.documentElement.scrollTop,
-      hash = this.hash,
-      toBlock = document.querySelector(hash).getBoundingClientRect().top,
-      start = null;
+//     let widthTop = document.documentElement.scrollTop,
+//       hash = this.hash,
+//       toBlock = document.querySelector(hash).getBoundingClientRect().top,
+//       start = null;
 
-    requestAnimationFrame(step);
+//     requestAnimationFrame(step);
 
-    function step(time) {
-      if (start === null) {
-        start = time;
-      }
+//     function step(time) {
+//       if (start === null) {
+//         start = time;
+//       }
 
-      let progress = time - start,
-        r =
-          toBlock < 0
-            ? Math.max(widthTop - progress / speed, widthTop + toBlock)
-            : Math.min(widthTop + progress / speed, widthTop + toBlock);
+//       let progress = time - start,
+//         r =
+//           toBlock < 0
+//             ? Math.max(widthTop - progress / speed, widthTop + toBlock)
+//             : Math.min(widthTop + progress / speed, widthTop + toBlock);
 
-      document.documentElement.scrollTo(0, r);
+//       document.documentElement.scrollTo(0, r);
 
-      if (r != widthTop + toBlock) {
-        requestAnimationFrame(step);
-      } else {
-        location.hash = hash;
-      }
-    }
-  });
-});
+//       if (r != widthTop + toBlock) {
+//         requestAnimationFrame(step);
+//       } else {
+//         location.hash = hash;
+//       }
+//     }
+//   });
+// });
 
 //For init wow.js lib
 new WOW().init();
