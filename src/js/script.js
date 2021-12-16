@@ -45,6 +45,11 @@ let emailEl = document.getElementById('email');
 let textEl = document.getElementById('text');
 let checkboxEl = document.getElementById('checkbox');
 
+//for resent to en version of site even if smth wrong in addrress
+const allLang = ['', 'uk', 'ru'];
+console.log(window.location.host);
+// if(!allLang.includes.)
+
 //For saving data to LocalStorage and sending them to email
 
 const formData = {};
@@ -72,7 +77,7 @@ contactFormEl.addEventListener('submit', e => {
     console.log(xhr.responseText);
     if (xhr.responseText == 'success') {
       alert(
-        'Ваше сообщение успешно отправлено. Я свяжусь с Вами в ближайшее время!',
+        'Your message has been successfully sent. I will contact you as soon as possible!',
       );
       nameEl.value = '';
       emailEl.value = '';
@@ -80,9 +85,7 @@ contactFormEl.addEventListener('submit', e => {
       checkboxEl.checked = false;
       localStorage.removeItem(LOCALSTORAGE_KEY);
     } else {
-      alert(
-        'Ваше сообщение не отправлено! Что-то пошло не так! Попробуйте позже!',
-      );
+      alert('Your message has not been sent! Please, try later!');
     }
   };
   xhr.send(JSON.stringify(formData));

@@ -15,7 +15,7 @@ gulp.task('server', function () {
     },
   });
 
-  gulp.watch('src/*.html').on('change', browserSync.reload);
+  gulp.watch('src/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('styles', function () {
@@ -31,7 +31,7 @@ gulp.task('styles', function () {
 
 gulp.task('watch', function () {
   gulp.watch('src/sass/**/*.+(scss|sass|css)', gulp.parallel('styles'));
-  gulp.watch('src/*.html').on('change', gulp.parallel('html'));
+  gulp.watch('src/**/*.html').on('change', gulp.parallel('html'));
   gulp.watch('src/js/**/*.js').on('change', gulp.parallel('scripts'));
   gulp.watch('src/fonts/**/*').on('all', gulp.parallel('fonts'));
   gulp.watch('src/icons/**/*').on('all', gulp.parallel('icons'));
