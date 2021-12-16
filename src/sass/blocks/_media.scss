@@ -47,6 +47,12 @@
         grid-auto-rows: 280px;
       }
     }
+    &__about {
+      font-size: 14px;
+    }
+    &__name {
+      font-size: 30px;
+    }
     &__img {
       object-fit: cover;
       object-position: top left;

@@ -8,6 +8,27 @@
     ),
     url('../img/main_bg.jpg') no-repeat 50% / cover;
   padding-top: 205px;
+  &__lang {
+    position: absolute;
+    top: 10px;
+    right: 106px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    color: $white-color;
+    font-weight: bold;
+    &-item {
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+      &_current {
+        color: $main-color;
+      }
+    }
+    &-link {
+      padding: 10px;
+    }
+  }
   &__title {
     width: 520px;
     margin-top: 10px;
