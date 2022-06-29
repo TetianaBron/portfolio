@@ -151,17 +151,6 @@
             </svg>
           </a>
         </li>
-        <li class="sidepanel__item">
-          <a
-            href="skype:tanya_nest?userinfo"
-            aria-label="skype link"
-            class="sidepanel__link"
-          >
-            <svg class="sidepanel__icon">
-              <use href="./icons/sprite.svg#social--skype"></use>
-            </svg>
-          </a>
-        </li>
       </ul>
     </aside>
     <div class="menu">
@@ -213,13 +202,6 @@
               </svg>
             </a>
           </li>
-          <li class="menu__social-item">
-            <a href="skype:tanya_nest?userinfo" aria-label="skype link">
-              <svg class="menu__social-icon">
-                <use href="./icons/sprite.svg#social--skype"></use>
-              </svg>
-            </a>
-          </li>
         </ul>
       </div>
       <div class="menu__overlay"></div>
@@ -236,19 +218,17 @@
           <a href="ru" class="promo__lang-link">ru</a>
         </li>
       </ul>
-      <button class="hamburger">
-        <div class="hamburger__items">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </button>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="container">
         <p class="title title_fs16 promo__subtitle">I am Tetiana Bronitska</p>
         <h1
           class="title title_fs48 promo__title animate__animated animate__flip"
         >
-          I am a web-developer from Kiev
+          I am a web-developer from Kyiv
         </h1>
         <div class="promo__btns">
           <a href="#my-projects" class="btn">Portfolio</a>
@@ -276,12 +256,7 @@
           <div class="about__summary">
             <h2 class="title title_fs16 about__title">About me</h2>
             <p
-              class="
-                title title_fs36
-                about__subtitle
-                wow
-                animate__animated animate__backInDown
-              "
+              class="title title_fs36 about__subtitle wow animate__animated animate__backInDown"
             >
               My name is Tetiana
             </p>
@@ -370,11 +345,7 @@
       <div class="container">
         <h2 class="title title_fs16 title__section-title">Experience</h2>
         <p
-          class="
-            title title_fs36 title__section_subtitle
-            wow
-            animate__animated animate__backInDown
-          "
+          class="title title_fs36 title__section_subtitle wow animate__animated animate__backInDown"
         >
           My path
         </p>
@@ -390,13 +361,24 @@
                 </div>
                 <div class="experience__head">
                   <h4 class="title title_fs14">JustSchool</h4>
-                  <p class="experience__text">English (2021- by now)</p>
+                  <p class="experience__text">English (2021 - by now)</p>
                 </div>
                 <div class="experience__item-text">
                   <p class="experience__text">
                     I have 2 classes with native speakers per week
                   </p>
-                  <p class="experience__text">Level: Intermediate</p>
+                  <a
+                    class="experience__link"
+                    href="https://drive.google.com/file/d/1PZlA9QVmhK0cs1KcI3IPDFTkamU1B-Ow/view"
+                    target="_blank"
+                  >
+                    <p class="experience__text">
+                      Completed level: intermediate
+                    </p>
+                  </a>
+                  <p class="experience__text">
+                    Current level: Upper intermediate
+                  </p>
                 </div>
               </li>
               <li class="experience__item-grid-container">
@@ -409,7 +391,7 @@
                   <a
                     class="experience__link"
                     href="https://www.udemy.com/certificate/UC-5492e87d-2e6f-461b-b58f-6c30f697a457"
-                    target="_black"
+                    target="_blank"
                   >
                     <h4 class="title title_fs14">Udemy</h4>
                     <p class="experience__text">
@@ -435,11 +417,11 @@
                   <a
                     class="experience__link"
                     href="https://drive.google.com/file/d/10PJlTS1nBEs4TAaY4L0FMgeBXCYrhj_V/view"
-                    target="_black"
+                    target="_blank"
                   >
                     <h4 class="title title_fs14">GOIT</h4>
                     <p class="experience__text">
-                      The course Full-stack developer (2020-2021)
+                      The course Full-stack developer (2020 - 2021)
                     </p>
                   </a>
                 </div>
@@ -471,7 +453,9 @@
                   <h4 class="title title_fs14">
                     Kiev National University of Internal Affairs
                   </h4>
-                  <p class="experience__text">Specialist Diploma (2004-2009)</p>
+                  <p class="experience__text">
+                    Specialist Diploma (2004 - 2009)
+                  </p>
                 </div>
                 <div class="experience__item-text">
                   <p class="experience__text">Specialty: jurisprudence</p>
@@ -488,12 +472,33 @@
               <li class="experience__item-grid-container">
                 <div class="icon__wrapper">
                   <svg class="icon">
+                    <use href="./icons/sprite.svg#experience--programmer"></use>
+                  </svg>
+                </div>
+                <div class="experience__head">
+                  <a
+                    class="experience__link"
+                    href="https://maklai.com.ua/"
+                    target="_blank"
+                  >
+                    <h4 class="title title_fs14">Maklai</h4>
+                  </a>
+                  <p class="experience__text">
+                    Junior front-end Developer (2022 - by now)
+                  </p>
+                </div>
+              </li>
+              <li class="experience__item-grid-container">
+                <div class="icon__wrapper">
+                  <svg class="icon">
                     <use href="./icons/sprite.svg#experience--developer"></use>
                   </svg>
                 </div>
                 <div class="experience__head">
-                  <h4 class="title title_fs14">GOIT</h4>
-                  <p class="experience__text">Teamwork practice (2021)</p>
+                  <a class="experience__link" href="#team-projects">
+                    <h4 class="title title_fs14">GOIT</h4>
+                    <p class="experience__text">Teamwork practice (2021)</p>
+                  </a>
                 </div>
                 <div class="experience__item-text">
                   <p class="experience__text">Scrum methodology</p>
@@ -509,7 +514,7 @@
                 <div class="experience__head">
                   <h4 class="title title_fs14">Head of the Department</h4>
                   <p class="experience__text">
-                    Prosecutor General's Office (2012-2021)
+                    Prosecutor General's Office (2012 - 2021)
                   </p>
                 </div>
                 <div class="experience__item-text">
@@ -532,11 +537,7 @@
       <div class="container">
         <h2 class="title title_fs16 title__section-title">Skills</h2>
         <p
-          class="
-            title title_fs36 title__section_subtitle
-            wow
-            animate__animated animate__backInDown
-          "
+          class="title title_fs36 title__section_subtitle wow animate__animated animate__backInDown"
         >
           What I use in my work
         </p>
@@ -637,10 +638,7 @@
             </svg>
 
             <p
-              class="
-                title title_fs14
-                skills__item-text skills__item-text_inline
-              "
+              class="title title_fs14 skills__item-text skills__item-text_inline"
             >
               Google
             </p>
@@ -685,11 +683,7 @@
       <div class="container">
         <h2 class="title title_fs16 title__section-title">Portfolio</h2>
         <p
-          class="
-            title title_fs36 title__section_subtitle
-            wow
-            animate__animated animate__backInDown
-          "
+          class="title title_fs36 title__section_subtitle wow animate__animated animate__backInDown"
         >
           My personal projects
         </p>
@@ -1176,14 +1170,8 @@
           </li>
         </ul>
         <p
-          class="
-            title
-            title_fs36
-            title__section_subtitle
-            title__section_subtitle_mt60
-            wow
-            animate__animated animate__backInDown
-          "
+          class="title title_fs36 title__section_subtitle title__section_subtitle_mt60 wow animate__animated animate__backInDown"
+          id="team-projects"
         >
           Team projects
         </p>
@@ -1238,7 +1226,10 @@
                 <h3 class="my-projects__name">MarketPlace</h3>
                 <ul class="my-projects__links">
                   <li class="my-projects__link">
-                    <a href="http://e66968xz.beget.tech/" target="_blank">
+                    <a
+                      href="https://project5-advertising-site.netlify.app/"
+                      target="_blank"
+                    >
                       <svg class="my-projects__icon">
                         <use href="./icons/sprite.svg#projects--link"></use>
                       </svg>
@@ -1330,12 +1321,7 @@
           <div class="contacts__descr">
             <h2 class="title title_fs16 contacts__title">The contacts</h2>
             <p
-              class="
-                title title_fs36
-                contacts__subtitle
-                wow
-                animate__animated animate__backInDown
-              "
+              class="title title_fs36 contacts__subtitle wow animate__animated animate__backInDown"
             >
               Contact me
             </p>
@@ -1343,22 +1329,11 @@
             <ul class="contacts__social-items">
               <li class="contacts__social-item">
                 <a
-                  href="mailto: tetiana.bron@gmail.com"
+                  href="mailto:tetiana.bron@gmail.com"
                   aria-label="ссылка на email"
                 >
                   <svg class="contacts__social-icon">
                     <use href="./icons/sprite.svg#social--mail"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="contacts__social-item">
-                <a
-                  href="tg://resolve?domain=TetianaBron"
-                  target="_blank"
-                  aria-label="ссылка на telegram"
-                >
-                  <svg class="contacts__social-icon">
-                    <use href="./icons/sprite.svg#social--telegram"></use>
                   </svg>
                 </a>
               </li>
@@ -1375,11 +1350,12 @@
               </li>
               <li class="contacts__social-item">
                 <a
-                  href="skype:tanya_nest?userinfo"
-                  aria-label="ссылка на skype"
+                  href="tg://resolve?domain=TetianaBron"
+                  target="_blank"
+                  aria-label="ссылка на telegram"
                 >
                   <svg class="contacts__social-icon">
-                    <use href="./icons/sprite.svg#social--skype"></use>
+                    <use href="./icons/sprite.svg#social--telegram"></use>
                   </svg>
                 </a>
               </li>

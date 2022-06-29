@@ -22,17 +22,17 @@ app.post('/', (req, res) => {
   console.log(req.body);
 
   const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
+    host: 'smtp.meta.ua',
     port: 465,
     secure: true,
     auth: {
-      user: 'tetiana.bron@gmail.com',
+      user: 'tetiana.bron@meta.ua',
       pass: process.env.PASSWORD,
     },
   });
 
   const mailOptions = {
-    from: req.body.email,
+    from: 'tetiana.bron@meta.ua',
     to: 'tanya_nest@ukr.net',
     subject: 'Message from my portfolio form',
     text: `${req.body.text}. Отправитель: ${req.body.name}, email: ${req.body.email}.`,
